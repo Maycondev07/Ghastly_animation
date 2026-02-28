@@ -1,0 +1,114 @@
+body {
+	background-color: black;
+}
+
+div{
+	display: inline-block;
+}
+
+img {
+	display: inline-block;
+}
+
+.game {
+	background-image: url("./game.png");
+	background-origin: center;
+	background-size: 350px;
+	background-repeat: no-repeat;
+	height: 597px;
+	width: 350px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.tela {
+	background-color: skyblue;
+	width: 206px;
+	height: 184px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 57px;
+	overflow: hidden;
+}
+
+.blocof {
+	height: 45px;
+	width: 10px;
+	animation: blocof 2s infinite;
+	position: relative;
+	top: 100px;
+}
+
+.blocod {
+	height: 30px;
+	width: 210px;
+	background-image: url("./chão.png");
+	background-origin: center;
+	background-size: 85px;
+	position: relative;
+	top: 94px;
+}
+
+.blocov {
+	height: 60px;
+	width: 40px;
+	animation: pular 1s infinite;
+	position: relative;
+	top: 100px;
+	left: 60px;
+}
+
+.blocov img{
+	width: 64px;
+	height: 64px;
+}
+
+.blocof img{
+	width: auto;
+	height: 40px;
+	animation: girar 250ms infinite;
+}
+
+@keyframes blocof{
+	to {
+		right: -140px;
+	}
+
+	from {
+		right: 140px;
+	}
+}
+
+@keyframes girar{
+	from {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pular{
+	25% {
+		top: 100px;
+		left: 60px;
+	}
+
+	50% {
+		top: 50px;
+		left: 70px;
+		transform: rotate(12deg);
+	}
+
+	75% {
+		top: 50px;
+		left: 70px;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 100px;
+		left: 60px;
+	}
+}
