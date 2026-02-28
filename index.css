@@ -66,7 +66,7 @@ img {
 .blocof img{
 	width: auto;
 	height: 40px;
-	animation: girar 250ms infinite;
+	animation: girar 500ms infinite;
 }
 
 @keyframes blocof{
@@ -111,4 +111,5 @@ img {
 		top: 100px;
 		left: 60px;
 	}
+
 }
